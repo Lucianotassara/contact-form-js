@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "6bc6ce21-cfa5-4caf-be25-2330bbe897ab",
+		"name": "contact-form-js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Consulta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Cosme Fulanitp",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "cosme@fulanito.com",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "1122334455",
+							"type": "text"
+						},
+						{
+							"key": "consulta",
+							"value": "Hola, esto es una consulta de prueba",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3004/consultas",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"consultas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Consulta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Cosme Fulanitp",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "cosme@fulanito.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "telefono",
+							"value": "1122334455",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "consulta",
+							"value": "Hola, Acabo de modificar esto que es una consulta de prueba",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3004/consultas/5f59110695363f596b5687b9",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"consultas",
+						"5f59110695363f596b5687b9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Consultas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3004/consultas",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"consultas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Consulta by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3004/consultas",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"consultas"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

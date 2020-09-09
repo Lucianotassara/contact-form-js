@@ -91,22 +91,6 @@ consultaController.route('/consultas').post(
     }
   );
 
-/**
- * PUT/
- * Agregar un consulta en el modelo Consulta
- */
-consultaController.route('/consultas/:consultaId').put(
-    async (req, res) => 
-    {
-    mongoose.set('useFindAndModify', true); 
-    Consulta.findOneAndUpdate({_id: req.params.consultaId}, req.body, {new: true}, function(err, n) {
-      if (err)
-        res.send(err);
-      res.json(n);
-      });  
-    }
-  );
-
   /**
  * DELETE/
  * Borrar un consulta del modelo Consulta
